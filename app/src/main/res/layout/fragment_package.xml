@@ -16,7 +16,7 @@
         android:padding="16dp"/>
 
     <!-- ListView để hiển thị danh sách các tour -->
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/package_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

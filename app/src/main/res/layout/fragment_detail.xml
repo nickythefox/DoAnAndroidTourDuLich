@@ -1,0 +1,72 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Hình ảnh của tour -->
+    <ImageView
+        android:id="@+id/img_tour"
+        android:layout_width="match_parent"
+        android:layout_height="296dp"
+        android:scaleType="centerCrop"
+       />
+
+    <!-- Giá của tour -->
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="Giá: 1.000.000 VNĐ" />
+
+    <!-- Tiêu đề của tour -->
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:text="Đà Lạt - Một ngày trong mây" />
+
+    <!-- Mô tả chi tiết của tour -->
+
+    <!-- Các nút bấm -->
+    <TextView
+        android:id="@+id/txt_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Nằm ở độ cao hơn 1.500m so với mực nước biển, Đà Lạt được mệnh danh là thành phố của mùa xuân với khí hậu mát mẻ quanh năm. Hành trình này sẽ đưa bạn tới những địa điểm nổi tiếng của Đà Lạt như Hồ Xuân Hương, Thác Prenn, Đồi Chè Cầu Đất, và Chùa Linh Phước."
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Nút Quay lại -->
+
+        <!-- Nút Thêm vào giỏ hàng -->
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:text="Quay lại" />
+
+        <Button
+            android:id="@+id/btn_add_to_cart"
+            android:layout_width="214dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Thêm vào giỏ hàng" />
+    </LinearLayout>
+
+</LinearLayout>
