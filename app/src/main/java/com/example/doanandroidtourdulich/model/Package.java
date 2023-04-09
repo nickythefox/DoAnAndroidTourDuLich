@@ -22,15 +22,37 @@ public class Package implements Serializable {
 
     public Button btndetail;
 
-    public int getImgTour() {
+
+    public byte[] getImgTour() {
         return imgTour;
     }
 
-    public void setImgTour(int imgTour) {
+    public void setImgTour(byte[] imgTour) {
         this.imgTour = imgTour;
     }
 
-    public int imgTour;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int id;
+
+
+    public byte[] imgTour;
+
+    public String getDecsriptiion() {
+        return decsriptiion;
+    }
+
+    public void setDecsriptiion(String decsriptiion) {
+        this.decsriptiion = decsriptiion;
+    }
+
+    public String decsriptiion;
 
     public void setNanme(String nanme) {
         this.nanme = nanme;
@@ -50,9 +72,17 @@ public class Package implements Serializable {
 
     private String price;
 
-    public Package( int imgTour, String nanme, String price) {
+    public Package( byte[] imgTour, String nanme, String price) {
         this.imgTour = imgTour;
         this.nanme = nanme;
         this.price = price;
     }
+    public Package(byte[] imgTour, String nanme, String price,String decsriptiion){
+        this.imgTour = imgTour;
+        this.nanme = nanme;
+        this.price = price;
+        this.decsriptiion=decsriptiion;
+
+    }
+
 }

@@ -15,7 +15,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.add(R.id.content_package,new PackageFragment());
+        //fragmentTransaction.add(R.id.content_package,new PackageFragment());
         fragmentTransaction.commit();
     }
 }

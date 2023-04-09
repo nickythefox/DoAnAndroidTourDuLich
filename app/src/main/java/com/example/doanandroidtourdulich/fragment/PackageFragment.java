@@ -13,7 +13,6 @@ import android.view.ViewGroup;
 
 import com.example.doanandroidtourdulich.Activity.ui.PackageActivity;
 import com.example.doanandroidtourdulich.R;
-import com.example.doanandroidtourdulich.adaptrer.PackageAdapter;
 import com.example.doanandroidtourdulich.model.Package;
 
 import java.util.ArrayList;
@@ -79,14 +78,15 @@ public class PackageFragment extends Fragment {
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(mPackageactivity);
         rvpackage.setLayoutManager(linearLayoutManager);
 
-        PackageAdapter packageAdapter=new PackageAdapter(getListPackage(), new PackageAdapter.IclickItemListener() {
-            @Override
+      // PackageAdapter packageAdapter=new PackageAdapter(getListPackage(), new PackageAdapter.IclickItemListener() {
+           /** @Override
             public void onClickItemPackage(Package apackage) {
-               //* mPackageactivity.gotoDeatailFragment(apackage);
+                mPackageactivity.gotoDeatailFragment(apackage);
             }
-        });
+           **/
+     //   });
 
-        rvpackage.setAdapter(packageAdapter);
+      //  rvpackage.setAdapter(packageAdapter);
         RecyclerView.ItemDecoration itemDecoration= new DividerItemDecoration(mPackageactivity,DividerItemDecoration.VERTICAL);
         rvpackage.addItemDecoration(itemDecoration);
         return mView;
@@ -95,8 +95,8 @@ public class PackageFragment extends Fragment {
     private List<Package> getListPackage() {
         List<Package> list = new ArrayList<>();
 
-
-        /** list.add(new Package(R.drawable.tourimg1,"DaLat","2000.000 VND"));
+/**
+        list.add(new Package(R.drawable.tourimg1,"DaLat","2000.000 VND"));
         list.add(new Package(R.drawable.tourimg2,"DaLat","2000.000 VND"));
         list.add(new Package(R.drawable.tourimg3,"DaLat","2000.000 VND"));
         list.add(new Package(R.drawable.tourimg5,"DaLat","2000.000 VND"));
@@ -104,8 +104,7 @@ public class PackageFragment extends Fragment {
         list.add(new Package(R.drawable.tourimg4,"DaLat","2000.000 VND"));
         list.add(new Package(R.drawable.tourimg7,"DaLat","2000.000 VND"));
         list.add(new Package(R.drawable.tourimg8,"DaLat","2000.000 VND"));
-         **/
-
+**/
         return list;
     }
 }

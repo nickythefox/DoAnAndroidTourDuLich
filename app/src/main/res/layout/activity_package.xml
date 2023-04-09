@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/content_package"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.ui.PackageActivity">
+    tools:context=".fragment.PackageFragment"
+    android:orientation="vertical">
 
-</FrameLayout>
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách các tour du lịch"
+        android:textSize="24sp"
+        android:padding="16dp"/>
+
+    <!-- ListView để hiển thị danh sách các tour -->
+    <ListView
+        android:id="@+id/package_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

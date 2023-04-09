@@ -12,7 +12,7 @@
         android:theme="@style/Theme.DoAnAndroidTourDuLich"
         tools:targetApi="31">
         <activity
-            android:name=".DetailActivity"
+            android:name=".detail.DetailActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.ui.CartActivity"
